@@ -1,0 +1,58 @@
+
+/* Hide the text for the home link */
+
+.folder-nav-container a.home { color: transparent;font-size:1px;vertical-align:middle;}
+
+.folder-nav-container a.home:hover { color: transparent; }
+
+ 
+
+/* Add the 'home' icon from Google's Material Design Icons */
+
+.folder-nav-container a.home:before { font-family: "Material Icons"; content: '\E88A'; font-size: 24px; color: #d1d1d1; width: 20px; height: 20px; overflow: hidden; vertical-align: middle; outline: none; border: 0; box-shadow: none; background: transparent; }
+
+.folder-nav-container a.home:hover:before { color: #fff !important; }
+
+ 
+
+/* Begin folder-nav-container wrap style */
+
+.folder-nav-container { display: inline-block; border-radius: 5px; overflow: hidden; border: 1px solid #e1e1e1;margin-bottom:35px; }
+
+ 
+
+.folder-nav-container a { display: inline-block; font-size: 12px; line-height: 28px; color: #222; position: relative; text-align: center; }
+
+.folder-nav-container a:first-child { padding-left: 12px; border-radius: 5px 0 0 5px; padding-right: 12px; }
+
+.folder-nav-container a:after { content: ''; position: absolute; top: 0; right: -14px; width: 28px; height: 28px; transform: scale(0.707) rotate(45deg); z-index: 1; box-shadow: 1px -1px 0 1px #e1e1e1; border-radius: 0 5px 0 50px; }
+
+ 
+
+/* Set the color for the current folder-nav-container node */
+
+.folder-nav-container .current {color: #0072C6;}
+
+ 
+
+/* Tidy up the position on our custom css classes we added to each folder-nav-container node */
+
+.folder-nav-container a.home { padding-left: 12px; }
+
+.folder-nav-container a.bc-node { padding-right: 10px; }
+
+.folder-nav-container .current { padding: 0 15px; margin-left: 10px; }
+
+ 
+
+/* folder-nav-container hover styles */
+
+.folder-nav-container a,
+
+.folder-nav-container a:after { background: #fff; color: #222; transition: all 0.35s ease-in-out; }
+
+.folder-nav-container a:hover,
+
+.folder-nav-container a:hover:after { background: #e31837; color:#fff; }
+
+.folder-nav-container a:hover:before { color: #0072C6; }
